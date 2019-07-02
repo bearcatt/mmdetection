@@ -60,7 +60,7 @@ class HRFPN(nn.Module):
                     out_channels,
                     kernel_size=3,
                     padding=1,
-                    stride=conv_stride
+                    stride=conv_stride,
                     conv_cfg=self.conv_cfg,
                     activation=None))
 

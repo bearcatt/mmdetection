@@ -1,7 +1,4 @@
 # model settings
-"""
-NCCL_SOCKET_IFNAME=eth0 python -m torch.distributed.launch --nproc_per_node=4 --nnodes=2 --node_rank=0 --master_addr="10.0.6.8" --master_port=1234 tools/train.py configs/fcos/fcos_mstrain_hrnet_w32_2x.py --launcher pytorch
-"""
 model = dict(
     type='FCOS',
     pretrained='open-mmlab://msra/hrnetv2_w32',
